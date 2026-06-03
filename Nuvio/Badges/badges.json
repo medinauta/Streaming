@@ -359,9 +359,9 @@
       "isEnabled": true,
       "name": "APPLE TV+",
       "pattern": "(?i)\\b(atvp|appletv)\\b",
-      "tagColor": "#0B0B0B",
-      "tagStyle": "filled",
-      "textColor": "#FFFFFF",
+      "tagColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "textColor": "#00000000",
       "type": "filter"
     },
     {

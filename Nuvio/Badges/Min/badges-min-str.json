@@ -306,7 +306,7 @@
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Min/sdr.png",
       "isEnabled": true,
       "name": "SDR",
-	  "pattern": "(?i)^(?!.*\\b(?:dovi|dv|dolby[\\s._-]?vision|hdr10(?:\\+|plus|p)?|hdr[\\s._-]?10|\\bhdr\\b|hlg)\\b)(?=.*\\b(?:x264|x265|xvid|h[\\s._-]?264|h[\\s._-]?265|hevc|avc|web[\\s._-]?dl|webrip|blu[\\s._-]?ray|remux|bdrip|dvd|dvdrip|hdtv|uhd|4k)\\b)",
+	  "pattern": "(?i)^(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision|hdr10(?:[\\s._-]?(?:\\+|plus|p))?|hdr[\\s._-]?10|hdr|hlg)\\b)",
       "tagColor": "#FFFFFF",
       "tagStyle": "filled",
       "textColor": "#000000",

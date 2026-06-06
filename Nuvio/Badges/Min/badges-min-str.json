@@ -254,7 +254,7 @@
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Min/DV.png",
       "isEnabled": true,
       "name": "DV (no HDR)",
-	  "pattern": "(?i)^(?=.*\b(?:dv|dovi|dolby[\s._-]?vision)\b)(?!.*\b(?:hdr|hdr10(?:\+|plus|p)?|hlg)\b)",
+	  "pattern": "(?i)^(?=.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)(?!.*\\b(?:hdr|hdr10(?:\\+|plus|p)?|hlg)\\b)"
       "tagColor": "#FFFFFF",
       "tagStyle": "filled",
       "textColor": "#000000",

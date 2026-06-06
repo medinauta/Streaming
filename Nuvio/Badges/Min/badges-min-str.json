@@ -47,8 +47,8 @@
       "borderColor": "#00000000",
       "color": "#00000000",      
 	  "id": "streaming",
-      "isExpanded": true
-      "name": "Streaming",
+      "isExpanded": true,
+      "name": "Streaming"
     }       	
   ],
   "filters": [

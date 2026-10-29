@@ -497,7 +497,7 @@
     {
       "id": "l-en",
 	  "name": "🇺🇸",
-      "pattern": "(?i)english|\\beng\\b",
+      "pattern": "(?i)(?<![^\\s\\[(_\\-.,])(english|eng)(?![ .\\-_]?sub(title)?s?)(?=[\\s\\)\\]_.\\-,]|$)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/badges/LANG%20EN.png",

@@ -47,7 +47,7 @@
       "isEnabled": true,
       "name": "HDTV",
       "pattern": "(?i)\\bhdtv\\b",
-      "tagColor": "#00000000",
+      "tagColor": "#33FFFFFF",
       "tagStyle": "filled",
       "textColor": "#FFFFFF",
       "type": "filter"

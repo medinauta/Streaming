@@ -27,16 +27,16 @@
       "groupId": "gq"
     },
     {
-      "borderColor": "#FFFFFF",
+      "borderColor": "#FF858283",
       "groupId": "gq",
       "id": "q-wr",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/webrip-black.png",
       "isEnabled": true,
       "name": "WEBRip",
       "pattern": "(?i)\\bweb[-_. ]?rip\\b",
-      "tagColor": "#00000000",
+      "tagColor": "#FFFFFF",
       "tagStyle": "filled",
-      "textColor": "#000000",
+      "textColor": "#FFFFFF",
       "type": "filter"
     },
     {
@@ -242,7 +242,7 @@
       "isEnabled": true,
       "name": "10bit",
       "pattern": "(?i)\\b10[\\s._-]?bit\\b",
-      "tagColor": "#33FFFFFF",
+      "tagColor": "#FFFFFF",
       "tagStyle": "filled",
       "textColor": "#FFFFFF",
       "type": "filter"

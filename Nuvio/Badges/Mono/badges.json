@@ -34,22 +34,22 @@
       "isEnabled": true,
       "name": "WEBRip",
       "pattern": "(?i)\\bweb[-_. ]?rip\\b",
-      "tagColor": "#FFFFFF",
+      "tagColor": "#33FFFFFF",
       "tagStyle": "filled",
       "textColor": "#000000",
       "type": "filter"
     },
     {
-      "borderColor": "#FFFFFF",
+      "borderColor": "#FF858283",
       "groupId": "gq",
 	  "id": "q-hdtv",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDTV.svg",
       "isEnabled": true,
       "name": "HDTV",
       "pattern": "(?i)\\bhdtv\\b",
-      "tagColor": "#00000000",
+      "tagColor": "#33FFFFFF",
       "tagStyle": "filled",
-      "textColor": "#00000000",
+      "textColor": "#FFFFFF",
       "type": "filter"
     },
     {

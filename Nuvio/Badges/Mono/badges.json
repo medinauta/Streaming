@@ -250,7 +250,7 @@
     {
       "id": "v-hdr10p",
       "name": "HDR10+",
-	  "pattern": "(?i)^(?=.*hdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p\\b))",
+	  "pattern": "(?i)\\bhdr10[\\s._-]?(?:\\+|plus|p\\b)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR10Plus.png",
@@ -263,7 +263,7 @@
     {
       "id": "v-h10",
       "name": "HDR10",
-      "pattern": "(?i)^(?=.*hdr[\\s._-]?10)(?!.*hdr[\\s._-]?10[\\s._-]?(?:\\\\+|plus|p))",
+      "pattern": "(?i)\\bhdr10\\b(?!.*(?:\\+|plus|p\\b))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR10.png",
@@ -276,7 +276,7 @@
     {
       "id": "v-hdr",
       "name": "HDR",
-      "pattern": "(?i)^(?=.*\\bHDR\\b)(?!.*hdr[\\s._-]?10)",
+      "pattern": "(?i)\\bhdr\\b(?!.*10)(?!.*dv)(?!.*dovi)
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR.png",
@@ -690,7 +690,7 @@
       "groupId": "gl"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-nflx",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/Netflix.png",
@@ -703,7 +703,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-amzn",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/amazon%20prime.png",
@@ -716,7 +716,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-atvp",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/atv%2B.png",
@@ -729,7 +729,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-dsnp",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/d%2B.png",
@@ -742,7 +742,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-hmax",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/hmax.png",
@@ -755,7 +755,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-hulu",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/hulu.png",
@@ -768,7 +768,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-pcok",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/peacock.png",
@@ -781,7 +781,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-pamp",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/p%2B.png",
@@ -794,7 +794,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-crave",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/crave.png",
@@ -807,7 +807,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-croll",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/str/crunchyroll.png",
@@ -820,7 +820,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "ge",
       "id": "s-h265",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/h265.png",
@@ -833,7 +833,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF858283",
+      "borderColor": "#00000000",
       "groupId": "ge",
       "id": "s-h264",
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/h264.png",

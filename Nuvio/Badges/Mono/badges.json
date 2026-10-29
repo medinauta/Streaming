@@ -276,7 +276,7 @@
     {
       "id": "v-hdr",
       "name": "HDR",
-      "pattern": "(?i)\\bhdr\\b(?!.*10)(?!.*dv)(?!.*dovi)
+      "pattern": "(?i)\\bhdr\\b(?!.*10)(?!.*dv)(?!.*dovi)(?!.*vision)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR.png",

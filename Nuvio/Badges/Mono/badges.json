@@ -94,7 +94,7 @@
     {
       "id": "q-w",
       "name": "WebDL",
-      "pattern": "(?i)\\b(?:web[-_. ]?dl|webdl|webrip|web-rip)\\b",
+	  "pattern": "(?i)\\b(?:web[-_. ]?dl|webdl)\\b(?!.*web[-_. ]?rip)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/mono-webdl.png",
@@ -497,7 +497,7 @@
     {
       "id": "l-en",
 	  "name": "🇺🇸",
-      "pattern": "(?i)(?<![^\\s\\[(_\\-.,])(english|eng)(?![ .\\-_]?sub(title)?s?)(?=[\\s\\)\\]_.\\-,]|$)",
+      "pattern": "(?i)english|\\beng\\b",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/badges/LANG%20EN.png",

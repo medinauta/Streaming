@@ -245,7 +245,7 @@
       "tagColor": "#FFFFFF",
       "tagStyle": "filled",
       "textColor": "#000000",
-      "type": "filter",
+      "type": "filter"
     },	
     {
       "id": "v-hdr10p",
@@ -496,7 +496,7 @@
     },
     {
       "id": "l-en",
-	  "name": "🇺🇸"
+	  "name": "🇺🇸",
       "pattern": "(?i)english|\\beng\\b",
       "type": "filter",
       "isEnabled": true,
@@ -844,7 +844,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
-    }
+    },
     {
       "borderColor": "#00000000",
       "groupId": "ge",
@@ -857,7 +857,7 @@
       "tagStyle": "filled",
       "textColor": "#00000000",
       "type": "filter"
-    },		
+    }		
   ],
   "groups": [
     {

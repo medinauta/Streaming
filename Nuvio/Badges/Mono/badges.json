@@ -1303,17 +1303,17 @@
   ],
   "groups": [
     {
-      "id": "gq",
-      "name": "Quality",
-      "color": "#27C04F",
-      "borderColor": "#FF00FF37",
-      "isExpanded": true
-    },
-    {
       "id": "gr",
       "name": "Resolution",
       "color": "#FFBE01",
       "borderColor": "#FF858283",
+      "isExpanded": true
+    },
+    {
+      "id": "gq",
+      "name": "Quality",
+      "color": "#27C04F",
+      "borderColor": "#FF00FF37",
       "isExpanded": true
     },
     {

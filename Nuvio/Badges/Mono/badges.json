@@ -16,7 +16,7 @@
     {
       "id": "q-b",
       "name": "BluRay",
-      "pattern": "(?i)^(?=.*(?:bluray|blu-ray))(?!.*remux)",
+      "pattern": "(?is)^(?=.*(?:bluray|blu-ray))(?!.*remux)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/bluray.webp",
@@ -81,7 +81,7 @@
     {
       "id": "q-cam",
       "name": "CAM",
-      "pattern": "(?i)^(?=.*(?:\\b(?:hd[-_. ]?)?cam(?:[-_. ]?rip)?\\b|\\b(?:hd[-_. ]?)?ts(?:[-_. ]?rip)?\\b|\\btelesync\\b|\\bpdvd\\b|\\b(?:hd[-_. ]?)?tc(?:[-_. ]?rip)?\\b|\\btelecine\\b|(?<!dvd)(?<!dvd[._-])\\bscr(?:eener)?\\b))(?!.*\\bdvd[\\s._-]?scr)",
+      "pattern": "(?is)^(?=.*(?:\\b(?:hd[-_. ]?)?cam(?:[-_. ]?rip)?\\b|\\b(?:hd[-_. ]?)?ts(?:[-_. ]?rip)?\\b|\\btelesync\\b|\\bpdvd\\b|\\b(?:hd[-_. ]?)?tc(?:[-_. ]?rip)?\\b|\\btelecine\\b|(?<!dvd)(?<!dvd[._-])\\bscr(?:eener)?\\b))(?!.*\\bdvd[\\s._-]?scr)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/cam.webp",
@@ -107,7 +107,7 @@
     {
       "id": "r-4k",
       "name": "4K",
-      "pattern": "(?i)^(?=.*(?:2160[pi]?|4k|uhd))(?!.*(?:1080[pi]?|720[pi]?))",
+      "pattern": "(?is)^(?=.*(?:2160[pi]?|4k|uhd))(?!.*(?:1080[pi]?|720[pi]?))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/4k.webp",
@@ -185,7 +185,7 @@
     {
       "id": "v-h10",
       "name": "HDR10",
-      "pattern": "(?i)^(?=.*\\bhdr[\\s._-]?10\\b(?![\\s._-]?bit))(?!.*\\bhdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p\\b))",
+      "pattern": "(?is)^(?=.*\\bhdr[\\s._-]?10\\b(?![\\s._-]?bit))(?!.*\\bhdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p\\b))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR10.webp",
@@ -198,7 +198,7 @@
     {
       "id": "v-hdr",
       "name": "HDR",
-      "pattern": "(?i)^(?=.*\\bhdr\\b)(?!.*\\bhdr[\\s._-]?10(?![0-9]|[\\s._-]?bit))(?!.*(?<![a-z])hlg(?![a-z]))(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?is)^(?=.*\\bhdr\\b)(?!.*\\bhdr[\\s._-]?10(?![0-9]|[\\s._-]?bit))(?!.*(?<![a-z])hlg(?![a-z]))(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR.webp",
@@ -211,7 +211,7 @@
     {
       "id": "v-hlg",
       "name": "HLG",
-      "pattern": "(?i)^(?=.*(?<![a-z])hlg(?![a-z]))(?!.*hdr[\\s._-]?10)(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?<![a-z])hlg(?![a-z]))(?!.*hdr[\\s._-]?10)(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/hlg.webp",
@@ -237,7 +237,7 @@
     {
       "id": "v-imax",
       "name": "IMAX",
-      "pattern": "(?i)^(?=.*\\bIMAX\\b)(?!.*enhanced)",
+      "pattern": "(?is)^(?=.*\\bIMAX\\b)(?!.*enhanced)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/IMAX.webp",
@@ -263,7 +263,7 @@
     {
       "id": "a-dv",
       "name": "DV",
-      "pattern": "(?i)^(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))(?!.*atmos(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))(?!.*(?<![a-z])(?:dd(?![a-z+])|ac-?3|dolby[\\s._-]?digital(?![\\s._-]?(?:plus|\\+)))(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/vision.webp",
@@ -484,7 +484,7 @@
     {
       "id": "a-dtsma",
       "name": "DTS-HD MA",
-      "pattern": "(?i)^(?=.*\\bdts[-_. ]?(?:hd[-_. ]?)?ma\\b)(?!.*\\bdts[-_.: ]?x\\b)",
+      "pattern": "(?is)^(?=.*\\bdts[-_. ]?(?:hd[-_. ]?)?ma\\b)(?!.*\\bdts[-_.: ]?x\\b)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/dtshdma.webp",
@@ -497,7 +497,7 @@
     {
       "id": "a-dtshd",
       "name": "DTS-HD",
-      "pattern": "(?i)^(?=.*\\bdts[-_. ]?hd\\b)(?!.*\\bdts[-_. ]?(?:hd[-_. ]?)?ma\\b)(?!.*\\bdts[-_.: ]?x\\b)",
+      "pattern": "(?is)^(?=.*\\bdts[-_. ]?hd\\b)(?!.*\\bdts[-_. ]?(?:hd[-_. ]?)?ma\\b)(?!.*\\bdts[-_.: ]?x\\b)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/dtshd.webp",
@@ -510,7 +510,7 @@
     {
       "id": "a-dts",
       "name": "DTS",
-      "pattern": "(?i)^(?=.*\\bDTS\\b)(?!.*\\bdts[-_. ]?(?:hd|ma|xll|x)\\b)",
+      "pattern": "(?is)^(?=.*\\bDTS\\b)(?!.*\\bdts[-_. ]?(?:hd|ma|xll|x)\\b)",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/dts.webp",
@@ -523,7 +523,7 @@
     {
       "id": "a-at-dv",
       "name": "Atmos + DV",
-      "pattern": "(?i)^(?=.*(?<![a-z])atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))(?!.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/atmos-vision.webp",
@@ -536,7 +536,7 @@
     {
       "id": "a-th-dv",
       "name": "TrueHD + DV",
-      "pattern": "(?i)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/truehd-vision.webp",
@@ -549,7 +549,7 @@
     {
       "id": "a-dp-dv",
       "name": "DD+ + DV",
-      "pattern": "(?i)^(?=.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/digitalplus-vision.webp",
@@ -562,7 +562,7 @@
     {
       "id": "a-dd-dv",
       "name": "DD + DV",
-      "pattern": "(?i)^(?=.*(?<![a-z])(?:dd(?![a-z+])|ac-?3)(?![a-z]))(?!.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?<![a-z])(?:dd(?![a-z+])|ac-?3|dolby[\\s._-]?digital(?![\\s._-]?(?:plus|\\+)))(?![a-z]))(?!.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/digital-vision.webp",
@@ -575,7 +575,7 @@
     {
       "id": "a-th-at",
       "name": "TrueHD + Atmos",
-      "pattern": "(?i)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?=.*(?<![a-z])atmos(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?=.*atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/dolby-truehd-atmos.webp",
@@ -588,7 +588,7 @@
     {
       "id": "a-dp-at",
       "name": "DD+ + Atmos",
-      "pattern": "(?i)^(?=.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?=.*(?<![a-z])atmos(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?=.*atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/dolby-digital-plus-atmos.webp",
@@ -601,7 +601,7 @@
     {
       "id": "a-at",
       "name": "Atmos",
-      "pattern": "(?i)^(?=.*(?<![a-z])atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*atmos(?![a-z]))(?:(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))(?!.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))|(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))(?:(?=.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))|(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/atmos.webp",
@@ -614,7 +614,7 @@
     {
       "id": "a-th",
       "name": "TrueHD",
-      "pattern": "(?i)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/truehd.webp",
@@ -627,7 +627,7 @@
     {
       "id": "a-dp",
       "name": "DD+",
-      "pattern": "(?i)^(?=.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/digitalplus.webp",
@@ -640,7 +640,7 @@
     {
       "id": "a-dd",
       "name": "DD",
-      "pattern": "(?i)^(?=.*(?<![a-z])(?:dd(?![a-z+])|ac-?3)(?![a-z]))(?!.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?<![a-z])(?:dd(?![a-z+])|ac-?3|dolby[\\s._-]?digital(?![\\s._-]?(?:plus|\\+)))(?![a-z]))(?!.*(?:dd[\\s._-]?\\+|dolby[\\s._-]?digital[\\s._-]?(?:plus|\\+)|ddp(?=[\\s._-]?\\d)|e-?ac-?3|(?<![a-z])(?:ddp(?:a(?![a-z])|(?![a-z])|(?=atmos)|a(?=tmos))|dd[\\s._-]?plus|digital[\\s._-]?plus)))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/digital.webp",
@@ -653,7 +653,7 @@
     {
       "id": "a-aac",
       "name": "AAC",
-      "pattern": "(?i)^(?=.*(?<![a-z])(?:aac|qaac)(?![a-z]))(?!.*(?:(?<![a-z])atmos(?![a-z])|true[\\s._-]?hd|(?<![a-z])ddp|(?<![a-z])dd\\+|(?<![a-z])e-?ac-?3|(?<![a-z])dd[25][. ]?[01]|(?<![a-z])ac-?3|(?<![a-z])dts|(?<![a-z])flac(?![a-z])|(?<![a-z])opus(?![a-z])))",
+      "pattern": "(?is)^(?=.*(?<![a-z])(?:aac|qaac)(?![a-z]))(?!.*(?:(?<![a-z])atmos(?![a-z])|true[\\s._-]?hd|(?<![a-z])ddp|(?<![a-z])dd\\+|(?<![a-z])e-?ac-?3|(?<![a-z])dd[25][. ]?[01]|(?<![a-z])ac-?3|(?<![a-z])dts|(?<![a-z])flac(?![a-z])|(?<![a-z])opus(?![a-z])))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/aac.webp",
@@ -679,7 +679,7 @@
     {
       "id": "a-opus",
       "name": "OPUS",
-      "pattern": "(?i)^(?=.*(?<![a-z])opus(?![a-z]))(?!.*(?:(?<![a-z])atmos(?![a-z])|true[\\s._-]?hd|(?<![a-z])ddp|(?<![a-z])dd\\+|(?<![a-z])e-?ac-?3|(?<![a-z])dd[25][. ]?[01]|(?<![a-z])ac-?3|(?<![a-z])dts|(?<![a-z])flac(?![a-z])))",
+      "pattern": "(?is)^(?=.*(?<![a-z])opus(?![a-z]))(?!.*(?:(?<![a-z])atmos(?![a-z])|true[\\s._-]?hd|(?<![a-z])ddp|(?<![a-z])dd\\+|(?<![a-z])e-?ac-?3|(?<![a-z])dd[25][. ]?[01]|(?<![a-z])ac-?3|(?<![a-z])dts|(?<![a-z])flac(?![a-z])))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/opus.webp",
@@ -757,7 +757,7 @@
     {
       "id": "c-20",
       "name": "2.0",
-      "pattern": "(?i)^(?=.*(?:(?<![0-9])2[. ]0(?![0-9])|(?<![0-9])2ch(?![a-z])))(?!.*[^0-9][5-8][. ][01](?![0-9]))",
+      "pattern": "(?is)^(?=.*(?:(?<![0-9])2[. ]0(?![0-9])|(?<![0-9])2ch(?![a-z])))(?!.*[^0-9][5-8][. ][01](?![0-9]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/ch20.webp",

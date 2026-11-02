@@ -172,7 +172,7 @@
     {
       "id": "v-hdr10p",
       "name": "HDR10+",
-      "pattern": "(?i)\\bhdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p\\b)",
+      "pattern": "(?i)(?<![a-z])hdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR10Plus.webp",
@@ -185,7 +185,7 @@
     {
       "id": "v-h10",
       "name": "HDR10",
-      "pattern": "(?is)^(?=.*\\bhdr[\\s._-]?10\\b(?![\\s._-]?bit))(?!.*\\bhdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p\\b))",
+      "pattern": "(?is)^(?=.*(?<![a-z])hdr[\\s._-]?10(?![0-9]|[\\s._-]?bit))(?!.*(?<![a-z])hdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p(?![a-z])))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR10.webp",
@@ -198,7 +198,7 @@
     {
       "id": "v-hdr",
       "name": "HDR",
-      "pattern": "(?is)^(?=.*\\bhdr\\b)(?!.*\\bhdr[\\s._-]?10(?![0-9]|[\\s._-]?bit))(?!.*(?<![a-z])hlg(?![a-z]))(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?is)^(?=.*(?<![a-z])hdr(?![a-z0-9]))(?!.*(?<![a-z])hdr[\\s._-]?10(?![0-9]|[\\s._-]?bit))(?!.*(?<![a-z])hlg(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/HDR.webp",
@@ -211,7 +211,7 @@
     {
       "id": "v-hlg",
       "name": "HLG",
-      "pattern": "(?is)^(?=.*(?<![a-z])hlg(?![a-z]))(?!.*hdr[\\s._-]?10)(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
+      "pattern": "(?is)^(?=.*(?<![a-z])hlg(?![a-z]))(?!.*(?<![a-z])hdr[\\s._-]?10(?![0-9]|[\\s._-]?bit))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/hlg.webp",

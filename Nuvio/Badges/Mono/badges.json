@@ -263,7 +263,7 @@
     {
       "id": "a-dv",
       "name": "DV",
-      "pattern": "(?i)^(?=.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)(?!.*\\batmos\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/vision.webp",
@@ -523,7 +523,7 @@
     {
       "id": "a-at-dv",
       "name": "Atmos + DV",
-      "pattern": "(?i)^(?=.*\\batmos\\b)(?=.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/atmos-vision.webp",
@@ -536,7 +536,7 @@
     {
       "id": "a-th-dv",
       "name": "TrueHD + DV",
-      "pattern": "(?i)^(?=.*\\btrue[\\s._-]?hd\\b)(?!.*\\batmos\\b)(?=.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/truehd-vision.webp",
@@ -549,7 +549,7 @@
     {
       "id": "a-dp-dv",
       "name": "DD+ + DV",
-      "pattern": "(?i)^(?=.*\\b(?:dd[25][. ][01]|dd[^p+a-z]\\b|\\bac-?3)\\b)(?!.*(?:\\bddp|\\bdd\\+|\\beac-?3|\\be-?ac-?3))(?!.*\\btrue[\\s._-]?hd\\b)(?!.*\\batmos\\b)(?=.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/digitalplus-vision.webp",
@@ -562,7 +562,7 @@
     {
       "id": "a-dd-dv",
       "name": "DD + DV",
-      "pattern": "(?i)^(?=.*\\b(?:dd[25][. ][01]|dd[^p+a-z]\\b|\\bac-?3)\\b)(?!.*(?:\\bddp|\\bdd\\+|\\beac-?3|\\be-?ac-?3))(?!.*\\btrue[\\s._-]?hd\\b)(?!.*\\batmos\\b)(?=.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])(?:dd(?![a-z+])|ac-?3)(?![a-z]))(?!.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?=.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/digital-vision.webp",
@@ -575,7 +575,7 @@
     {
       "id": "a-th-at",
       "name": "TrueHD + Atmos",
-      "pattern": "(?i)^(?=.*\\btrue[\\s._-]?hd\\b)(?=.*\\batmos\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?=.*(?<![a-z])atmos(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/dolby-truehd-atmos.webp",
@@ -588,7 +588,7 @@
     {
       "id": "a-dp-at",
       "name": "DD+ + Atmos",
-      "pattern": "(?i)^(?=.*\\b(?:dd[25][. ][01]|dd[^p+a-z]\\b|\\bac-?3)\\b)(?!.*(?:\\bddp|\\bdd\\+|\\beac-?3|\\be-?ac-?3))(?!.*\\btrue[\\s._-]?hd\\b)(?=.*\\batmos\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?=.*(?<![a-z])atmos(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/dolby-digital-plus-atmos.webp",
@@ -601,7 +601,7 @@
     {
       "id": "a-at",
       "name": "Atmos",
-      "pattern": "(?i)^(?=.*\\batmos\\b)(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/atmos.webp",
@@ -614,7 +614,7 @@
     {
       "id": "a-th",
       "name": "TrueHD",
-      "pattern": "(?i)^(?=.*\\btrue[\\s._-]?hd\\b)(?!.*\\batmos\\b)(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/truehd.webp",
@@ -627,7 +627,7 @@
     {
       "id": "a-dp",
       "name": "DD+",
-      "pattern": "(?i)^(?=.*(?:\\bddp|\\bdd\\+|\\beac-?3|\\be-?ac-?3))(?!.*\\batmos\\b)(?!.*\\btrue[\\s._-]?hd\\b)(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/digitalplus.webp",
@@ -640,7 +640,7 @@
     {
       "id": "a-dd",
       "name": "DD",
-      "pattern": "(?i)^(?=.*\\b(?:dd[25][. ][01]|dd[^p+a-z]\\b|\\bac-?3)\\b)(?!.*(?:\\bddp|\\bdd\\+|\\beac-?3|\\be-?ac-?3))(?!.*\\btrue[\\s._-]?hd\\b)(?!.*\\batmos\\b)(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)",
+      "pattern": "(?i)^(?=.*(?<![a-z])(?:dd(?![a-z+])|ac-?3)(?![a-z]))(?!.*(?<![a-z])(?:ddpa?|dd\\+|dd[\\s._-]?plus|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)(?![a-z]))(?!.*(?<![a-z])true[\\s._-]?hd(?![a-z]))(?!.*(?<![a-z])atmos(?![a-z]))(?!.*(?<![a-z])(?:dv|dovi|dolby[\\s._-]?vision)(?![a-z]))",
       "type": "filter",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/medinauta/Streaming/main/Nuvio/Badges/Mono/digital.webp",
